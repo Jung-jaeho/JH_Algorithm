@@ -22,18 +22,19 @@ void bfs(int start){
 
         for(int i=0 ; i < a[x].size(); i++)  //i 는 0부터 현재 큐에서 꺼낸 인접 노드들을 방문 하면서
         { //인접 노드들을 방문을 한 상태이면 무시하고 방문을 한 상태가 아니라면 큐에 담아준다.
-            //그리고 방문 처리를 해준다.
-            int y = a[x][i];
-            if(!c[y]){ //방문을 하지 않았다면
-                q.push(y);
-                c[y] = true;  //방문 처리를 해준다.
+          //그리고 방문 처리를 해준다.
+          int y = a[x][i];
+          if(!c[y]){ //방문을 하지 않았다면
+            q.push(y);
+            c[y] = true;  //방문 처리를 해준다.
 
-            }
+          }
         }
 
     }
 
 }
+
 int main(void){
     a[1].push_back(2);  //1과 2가 연결되어 있다.
     a[2].push_back(1);  //2과 1이 연결되어 있다.
@@ -43,10 +44,7 @@ int main(void){
 
     a[2].push_back(3);
     a[3].push_back(2);
-
-    a[2].push_back(4);
-    a[4].push_back(2);
-
+    
     a[2].push_back(5);
     a[5].push_back(2);
 
