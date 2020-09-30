@@ -17,5 +17,6 @@
 
 
 [참고] https://shoark7.github.io/programming/algorithm/3-LIS-algorithms
+[참고] https://source-sc.tistory.com/15
 
 
